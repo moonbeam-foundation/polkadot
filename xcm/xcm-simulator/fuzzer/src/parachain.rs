@@ -147,6 +147,7 @@ impl Config for XcmConfig {
 	type AssetTrap = ();
 	type AssetClaims = ();
 	type SubscriptionService = ();
+	type CallDispatcher = Call;
 }
 
 #[frame_support::pallet]
