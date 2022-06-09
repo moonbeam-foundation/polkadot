@@ -144,6 +144,7 @@ impl xcm_executor::Config for XcmConfig {
 	type AssetTrap = ();
 	type AssetClaims = ();
 	type SubscriptionService = ();
+	type CallDispatcher = RuntimeCall;
 }
 
 impl crate::Config for Test {
