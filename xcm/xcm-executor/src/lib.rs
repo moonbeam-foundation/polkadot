@@ -31,7 +31,7 @@ use xcm::latest::{
 
 pub mod traits;
 use traits::{
-	ClaimAssets, ConvertOrigin, DropAssets, FilterAssetLocation, InvertLocation, OnResponse,
+	CallDispatcher, ClaimAssets, ConvertOrigin, DropAssets, FilterAssetLocation, InvertLocation, OnResponse,
 	ShouldExecute, TransactAsset, VersionChangeNotifier, WeightBounds, WeightTrader,
 };
 
@@ -344,7 +344,7 @@ impl<Config: config::Config> XcmExecutor<Config> {
 					.map_err(|_| XcmError::BadOrigin)?;
 				let weight = message_call.get_dispatch_info().weight;
 				ensure!(weight <= require_weight_at_most, XcmError::MaxWeightInvalid);
-				let actual_weight = match message_call.dispatch(dispatch_origin) {
+				let actual_weight = match Config::CallDispatcher::dispatch(message_call, dispatch_origin)  {
 					Ok(post_info) => post_info.actual_weight,
 					Err(error_and_info) => {
 						// Not much to do with the result as it is. It's up to the parachain to ensure that the

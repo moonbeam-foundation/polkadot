@@ -15,8 +15,8 @@
 // along with Polkadot.  If not, see <http://www.gnu.org/licenses/>.
 
 use crate::traits::{
-	ClaimAssets, ConvertOrigin, DropAssets, FilterAssetLocation, InvertLocation, OnResponse,
-	ShouldExecute, TransactAsset, VersionChangeNotifier, WeightBounds, WeightTrader,
+	CallDispatcher, AssetExchange, AssetLock, ClaimAssets, ConvertOrigin, DropAssets, ExportXcm, FeeManager,
+	OnResponse, ShouldExecute, TransactAsset, VersionChangeNotifier, WeightBounds, WeightTrader,
 };
 use frame_support::{
 	dispatch::{Dispatchable, Parameter},
@@ -68,4 +68,8 @@ pub trait Config {
 
 	/// How we handle version subscription requests.
 	type SubscriptionService: VersionChangeNotifier;
+	/// How calls are dispatched from XCM.
+	/// Allows to modify the origin and/or the call based on the other.
+	/// To simply do `call.dispatch(origin)`, use `JustDispatch`.
+	type CallDispatcher: CallDispatcher<Self::Call>;
 }

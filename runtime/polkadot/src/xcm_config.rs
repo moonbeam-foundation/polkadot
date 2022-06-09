@@ -34,6 +34,7 @@ use xcm_builder::{
 	IsConcrete, LocationInverter, SignedAccountId32AsNative, SignedToAccountId32,
 	SovereignSignedViaLocation, TakeWeightCredit, UsingComponents,
 };
+use xcm_executor::traits::JustDispatch;
 
 parameter_types! {
 	/// The location of the DOT token, from the context of this chain. Since this token is native to this
@@ -149,6 +150,7 @@ impl xcm_executor::Config for XcmConfig {
 	type AssetTrap = XcmPallet;
 	type AssetClaims = XcmPallet;
 	type SubscriptionService = XcmPallet;
+	type CallDispatcher = JustDispatch;
 }
 
 parameter_types! {
