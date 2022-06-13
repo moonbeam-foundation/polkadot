@@ -34,7 +34,7 @@ use xcm_builder::{
 	CurrencyAdapter as XcmCurrencyAdapter, FixedWeightBounds, IsConcrete, LocationInverter,
 	SignedAccountId32AsNative, SignedToAccountId32, SovereignSignedViaLocation, UsingComponents,
 };
-use xcm_executor::{traits::JustDispatch, XcmExecutor};
+use xcm_executor::XcmExecutor;
 
 parameter_types! {
 	pub const RocLocation: MultiLocation = Here.into();
@@ -135,7 +135,7 @@ impl xcm_executor::Config for XcmConfig {
 	type AssetTrap = XcmPallet;
 	type AssetClaims = XcmPallet;
 	type SubscriptionService = XcmPallet;
-	type CallDispatcher = JustDispatch;
+	type CallDispatcher = Call;
 }
 
 parameter_types! {

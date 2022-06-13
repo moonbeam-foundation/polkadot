@@ -18,7 +18,7 @@ use frame_support::{parameter_types, traits::Everything, weights::Weight};
 use xcm::latest::prelude::*;
 use xcm_builder::{AllowUnpaidExecutionFrom, FixedWeightBounds, SignedToAccountId32};
 use xcm_executor::{
-	traits::{JustDispatch, TransactAsset, WeightTrader},
+	traits::{TransactAsset, WeightTrader},
 	Assets,
 };
 
@@ -92,5 +92,5 @@ impl xcm_executor::Config for XcmConfig {
 	type AssetTrap = super::Xcm;
 	type AssetClaims = super::Xcm;
 	type SubscriptionService = super::Xcm;
-	type CallDispatcher = JustDispatch;
+	type CallDispatcher = Call;
 }
