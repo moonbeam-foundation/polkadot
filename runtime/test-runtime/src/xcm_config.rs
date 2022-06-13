@@ -92,5 +92,5 @@ impl xcm_executor::Config for XcmConfig {
 	type AssetTrap = super::Xcm;
 	type AssetClaims = super::Xcm;
 	type SubscriptionService = super::Xcm;
-	type CallDispatcher = Call;
+	type CallDispatcher = super::Call;
 }
