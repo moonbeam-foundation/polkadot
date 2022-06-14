@@ -149,7 +149,7 @@ impl xcm_executor::Config for XcmConfig {
 	type CallDispatcher = Call;
 }
 
-parameter_types! {<
+parameter_types! {
 	pub const CouncilBodyId: BodyId = BodyId::Executive;
 }
 
