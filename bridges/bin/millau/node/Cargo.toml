@@ -23,38 +23,38 @@ pallet-bridge-messages = { path = "../../../modules/messages" }
 
 # Substrate Dependencies
 
-beefy-gadget = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-beefy-gadget-rpc = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-beefy-primitives = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-frame-benchmarking = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-node-inspect = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-pallet-mmr-rpc = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-pallet-transaction-payment-rpc = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-basic-authorship = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-cli = { git = "https://github.com/paritytech/substrate", features = ["wasmtime"] , branch = "polkadot-v0.9.23" }
-sc-client-api = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-consensus-aura = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-executor = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-finality-grandpa = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-finality-grandpa-rpc = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-keystore = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-rpc = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-service = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-telemetry = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sc-transaction-pool = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sp-consensus = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sp-consensus-aura = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sp-finality-grandpa = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sp-runtime = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-sp-timestamp = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-substrate-frame-rpc-system = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
+beefy-gadget = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+beefy-gadget-rpc = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+beefy-primitives = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+frame-benchmarking = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+frame-benchmarking-cli = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+node-inspect = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+pallet-mmr-rpc = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+pallet-transaction-payment-rpc = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-basic-authorship = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-cli = { git = "https://github.com/purestake/substrate", features = ["wasmtime"] , branch = "elois-background-sig-0.23.0" }
+sc-client-api = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-consensus = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-consensus-aura = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-executor = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-finality-grandpa = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-finality-grandpa-rpc = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-keystore = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-rpc = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-service = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-telemetry = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sc-transaction-pool = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sp-consensus = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sp-consensus-aura = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sp-core = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sp-finality-grandpa = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sp-runtime = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+sp-timestamp = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+substrate-frame-rpc-system = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
 
 [build-dependencies]
-substrate-build-script-utils = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
-frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.23" }
+substrate-build-script-utils = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
+frame-benchmarking-cli = { git = "https://github.com/purestake/substrate", branch = "elois-background-sig-0.23.0" }
 
 [features]
 default = []
