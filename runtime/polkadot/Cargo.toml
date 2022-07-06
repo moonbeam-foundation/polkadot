@@ -47,7 +47,7 @@ pallet-collective = { git = "https://github.com/purestake/substrate", default-fe
 pallet-democracy = { git = "https://github.com/purestake/substrate", default-features = false , branch = "elois-background-sig-0.23.0" }
 pallet-elections-phragmen = { git = "https://github.com/purestake/substrate", default-features = false , branch = "elois-background-sig-0.23.0" }
 pallet-election-provider-multi-phase = { git = "https://github.com/purestake/substrate", default-features = false , branch = "elois-background-sig-0.23.0" }
-frame-executive = { git = "https://github.com/purestake/substrate", default-features = false , branch = "elois-background-sig-0.23.0" }
+frame-executive = { git = "https://github.com/purestake/substrate", features = ["background-signature-verification"], default-features = false , branch = "elois-background-sig-0.23.0" }
 pallet-grandpa = { git = "https://github.com/purestake/substrate", default-features = false , branch = "elois-background-sig-0.23.0" }
 pallet-identity = { git = "https://github.com/purestake/substrate", default-features = false , branch = "elois-background-sig-0.23.0" }
 pallet-im-online = { git = "https://github.com/purestake/substrate", default-features = false , branch = "elois-background-sig-0.23.0" }
