@@ -25,20 +25,20 @@ polkadot-client = { path = "../node/client", optional = true }
 polkadot-node-core-pvf = { path = "../node/core/pvf", optional = true }
 polkadot-performance-test = { path = "../node/test/performance-test", optional = true }
 
-sp-core = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.37" }
-sp-io = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.37" }
-sp-keyring = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.37" }
-frame-benchmarking-cli = { git = "https://github.com/paritytech/substrate", optional = true , branch = "polkadot-v0.9.37" }
-try-runtime-cli = { git = "https://github.com/paritytech/substrate", optional = true , branch = "polkadot-v0.9.37" }
-sc-cli = { git = "https://github.com/paritytech/substrate", optional = true , branch = "polkadot-v0.9.37" }
-sc-service = { git = "https://github.com/paritytech/substrate", optional = true , branch = "polkadot-v0.9.37" }
+sp-core = { git = "https://github.com/PureStake/substrate", branch = "moonbeam-polkadot-v0.9.37" }
+sp-io = { git = "https://github.com/PureStake/substrate", branch = "moonbeam-polkadot-v0.9.37" }
+sp-keyring = { git = "https://github.com/PureStake/substrate", branch = "moonbeam-polkadot-v0.9.37" }
+frame-benchmarking-cli = { git = "https://github.com/PureStake/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.37" }
+try-runtime-cli = { git = "https://github.com/PureStake/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.37" }
+sc-cli = { git = "https://github.com/PureStake/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.37" }
+sc-service = { git = "https://github.com/PureStake/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.37" }
 polkadot-node-metrics = { path = "../node/metrics" }
-sc-tracing = { git = "https://github.com/paritytech/substrate", optional = true , branch = "polkadot-v0.9.37" }
-sc-sysinfo = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.37" }
-sc-executor = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.37" }
+sc-tracing = { git = "https://github.com/PureStake/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.37" }
+sc-sysinfo = { git = "https://github.com/PureStake/substrate", branch = "moonbeam-polkadot-v0.9.37" }
+sc-executor = { git = "https://github.com/PureStake/substrate", branch = "moonbeam-polkadot-v0.9.37" }
 
 [build-dependencies]
-substrate-build-script-utils = { git = "https://github.com/paritytech/substrate", branch = "polkadot-v0.9.37" }
+substrate-build-script-utils = { git = "https://github.com/PureStake/substrate", branch = "moonbeam-polkadot-v0.9.37" }
 
 [features]
 default = ["db", "cli", "hostperfcheck", "full-node", "polkadot-native"]
