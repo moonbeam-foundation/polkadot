@@ -330,7 +330,7 @@ impl TryFrom<OldWeightLimit> for WeightLimit {
 	fn try_from(x: OldWeightLimit) -> result::Result<Self, ()> {
 		use OldWeightLimit::*;
 		match x {
-			Limited(w) => Ok(Self::Limited(Weight::from_parts(w, DEFAULT_PROOF_SIZE))),
+			Limited(w) => Ok(Self::Limited(Weight::from_parts(w, 2 * DEFAULT_PROOF_SIZE))),
 			Unlimited => Ok(Self::Unlimited),
 		}
 	}
