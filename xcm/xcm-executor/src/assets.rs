@@ -455,7 +455,7 @@ impl Assets {
 		if maybe_limit.map_or(false, |l| l == 0) {
 			return masked
 		}
-		match mask {
+		match mask { 
 			MultiAssetFilter::Wild(All) | MultiAssetFilter::Wild(AllCounted(_)) => {
 				if maybe_limit.map_or(true, |l| self.len() <= l) {
 					return self.clone()

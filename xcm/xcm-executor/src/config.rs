@@ -106,4 +106,6 @@ pub trait Config {
 	/// Use this type to explicitly whitelist calls that cannot undergo recursion. This is a
 	/// temporary measure until we properly account for proof size weights for XCM instructions.
 	type SafeCallFilter: Contains<Self::RuntimeCall>;
+
+	type AssetIsBurnable: Contains<AssetId>;
 }

@@ -740,7 +740,10 @@ impl<Config: config::Config> XcmExecutor<Config> {
 				Config::SubscriptionService::stop(origin, &self.context)
 			},
 			BurnAsset(assets) => {
-				self.holding.saturating_take(assets.into());
+				let assets = self.holding.saturating_take(assets.into());
+				for asset in assets.assets_iter() {
+					ensure!(Config::AssetIsBurnable::contains(&asset.id), XcmError::AssetNotFound);
+				}
 				Ok(())
 			},
 			ExpectAsset(assets) =>
