@@ -667,6 +667,7 @@ impl Config for TestConfig {
 	type MessageExporter = TestMessageExporter;
 	type CallDispatcher = TestCall;
 	type SafeCallFilter = Everything;
+	type AssetIsBurnable = Everything;
 }
 
 pub fn fungible_multi_asset(location: MultiLocation, amount: u128) -> MultiAsset {
