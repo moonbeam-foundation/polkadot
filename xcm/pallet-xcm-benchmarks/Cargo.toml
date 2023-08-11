@@ -10,22 +10,22 @@ targets = ["x86_64-unknown-linux-gnu"]
 [dependencies]
 codec = { package = "parity-scale-codec", version = "3.4.0", default-features = false }
 scale-info = { version = "2.5.0", default-features = false, features = ["derive"] }
-frame-support = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
-frame-system = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
-sp-runtime = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
-sp-std = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
-sp-io = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
+frame-support = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
+frame-system = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
+sp-runtime = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
+sp-std = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
+sp-io = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
 xcm-executor = { path = "../xcm-executor", default-features = false }
-frame-benchmarking = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
+frame-benchmarking = { default-features = false, git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
 xcm = { path = "..", default-features = false }
 xcm-builder = { path = "../xcm-builder", default-features = false }
 log = "0.4.17"
 
 [dev-dependencies]
-pallet-balances = { git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
-pallet-assets = { git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
-sp-core = { git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
-sp-tracing = { git = "https://github.com/moonbeam-foundation/substrate" , branch = "moonbeam-polkadot-v0.9.43" }
+pallet-balances = { git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
+pallet-assets = { git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
+sp-core = { git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
+sp-tracing = { git = "https://github.com/moonbeam-foundation/substrate" , branch = "grw/moon-1119-add-identity-specs" }
 xcm = { path = ".." }
 # temp
 pallet-xcm = { path = "../pallet-xcm" }

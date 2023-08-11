@@ -26,22 +26,22 @@ polkadot-client = { path = "../node/client", optional = true }
 polkadot-node-core-pvf-worker = { path = "../node/core/pvf/worker", optional = true }
 polkadot-performance-test = { path = "../node/test/performance-test", optional = true }
 
-sp-core = { git = "https://github.com/moonbeam-foundation/substrate", branch = "moonbeam-polkadot-v0.9.43" }
-sp-io = { git = "https://github.com/moonbeam-foundation/substrate", branch = "moonbeam-polkadot-v0.9.43" }
-sp-keyring = { git = "https://github.com/moonbeam-foundation/substrate", branch = "moonbeam-polkadot-v0.9.43" }
-sp-maybe-compressed-blob = { git = "https://github.com/moonbeam-foundation/substrate", branch = "moonbeam-polkadot-v0.9.43" }
-frame-benchmarking-cli = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.43" }
-try-runtime-cli = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.43" }
-sc-cli = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.43" }
-sc-service = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.43" }
+sp-core = { git = "https://github.com/moonbeam-foundation/substrate", branch = "grw/moon-1119-add-identity-specs" }
+sp-io = { git = "https://github.com/moonbeam-foundation/substrate", branch = "grw/moon-1119-add-identity-specs" }
+sp-keyring = { git = "https://github.com/moonbeam-foundation/substrate", branch = "grw/moon-1119-add-identity-specs" }
+sp-maybe-compressed-blob = { git = "https://github.com/moonbeam-foundation/substrate", branch = "grw/moon-1119-add-identity-specs" }
+frame-benchmarking-cli = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "grw/moon-1119-add-identity-specs" }
+try-runtime-cli = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "grw/moon-1119-add-identity-specs" }
+sc-cli = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "grw/moon-1119-add-identity-specs" }
+sc-service = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "grw/moon-1119-add-identity-specs" }
 polkadot-node-metrics = { path = "../node/metrics" }
-sc-tracing = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "moonbeam-polkadot-v0.9.43" }
-sc-sysinfo = { git = "https://github.com/moonbeam-foundation/substrate", branch = "moonbeam-polkadot-v0.9.43" }
-sc-executor = { git = "https://github.com/moonbeam-foundation/substrate", branch = "moonbeam-polkadot-v0.9.43" }
-sc-storage-monitor = { git = "https://github.com/moonbeam-foundation/substrate", branch = "moonbeam-polkadot-v0.9.43" }
+sc-tracing = { git = "https://github.com/moonbeam-foundation/substrate", optional = true , branch = "grw/moon-1119-add-identity-specs" }
+sc-sysinfo = { git = "https://github.com/moonbeam-foundation/substrate", branch = "grw/moon-1119-add-identity-specs" }
+sc-executor = { git = "https://github.com/moonbeam-foundation/substrate", branch = "grw/moon-1119-add-identity-specs" }
+sc-storage-monitor = { git = "https://github.com/moonbeam-foundation/substrate", branch = "grw/moon-1119-add-identity-specs" }
 
 [build-dependencies]
-substrate-build-script-utils = { git = "https://github.com/moonbeam-foundation/substrate", branch = "moonbeam-polkadot-v0.9.43" }
+substrate-build-script-utils = { git = "https://github.com/moonbeam-foundation/substrate", branch = "grw/moon-1119-add-identity-specs" }
 
 [features]
 default = ["db", "cli", "full-node", "polkadot-native"]
